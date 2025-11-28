@@ -1,48 +1,82 @@
-import java.util.Scanner;
+Java Calculator
 
-public class Calculator {
-    public static void main(String[] args) {
+📘 Project Overview
 
-        Scanner sc = new Scanner(System.in);
+This project is a simple Java console-based calculator created using user input and switch-case logic.
+It performs four basic arithmetic operations: Addition, Subtraction, Multiplication, and Division.
+The program is beginner-friendly and demonstrates core Java concepts like input handling, conditional statements, and error checking.
 
-        System.out.println("Enter first number: ");
-        double num1 = sc.nextDouble();
 
-        System.out.println("Enter second number: ");
-        double num2 = sc.nextDouble();
+---
 
-        System.out.println("Choose an operation: +  -  *  /");
-        char op = sc.next().charAt(0);
+🚀 Features
 
-        double result = 0;
+Performs four basic operations:
 
-        switch (op) {
-            case '+':
-                result = num1 + num2;
-                break;
+Addition (+)
 
-            case '-':
-                result = num1 - num2;
-                break;
+Subtraction (-)
 
-            case '*':
-                result = num1 * num2;
-                break;
+Multiplication (*)
 
-            case '/':
-                if (num2 != 0) {
-                    result = num1 / num2;
-                } else {
-                    System.out.println("Error! Division by zero is not allowed.");
-                    return;
-                }
-                break;
+Division (/)
 
-            default:
-                System.out.println("Invalid operator!");
-                return;
-        }
 
-        System.out.println("Result: " + result);
-    }
-}
+Handles invalid operator input
+
+Prevents division by zero
+
+Accepts user input using the Scanner class
+
+Clean and easy-to-understand logic using switch-case
+
+
+
+---
+
+🛠 Technologies Used
+
+Java (JDK 8 or higher)
+
+Scanner class for input
+
+Switch-case for operator handling
+
+
+
+---
+
+📁 Project Structure
+
+Calculator/
+│
+├── Calculator.java
+└── README.md
+
+
+---
+
+▶️ How to Run the Program
+
+1. Install Java
+
+Ensure Java JDK is installed on your system.
+
+2. Save the File
+
+Save your calculator code as:
+
+Calculator.java
+
+3. Open Terminal or Command Prompt
+
+Navigate to the folder containing the file.
+
+4. Compile the Program
+
+javac Calculator.java
+
+5. Run the Program
+
+java Calculator
+
